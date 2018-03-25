@@ -73,7 +73,7 @@ namespace vmclient
                 .WithAdminPassword("Azure12345678")
                 .WithComputerName(vmName)
                 .WithExistingAvailabilitySet(availabilitySet)
-                .WithSize(VirtualMachineSizeTypes.Standard_B1s)
+                .WithSize(VirtualMachineSizeTypes.StandardA1)
                 .Create();
 
 
