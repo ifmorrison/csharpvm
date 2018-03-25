@@ -93,6 +93,17 @@ namespace vmclient
             }
             Console.WriteLine("Press enter to continue...");
             Console.ReadLine();
+
+            Console.WriteLine("Stopping vm...");
+            vm.PowerOff();
+            Console.WriteLine("Press enter to continue...");
+            Console.ReadLine();
+
+            Console.WriteLine("Deleting VM...");
+            
+            azure.ResourceGroups.DeleteByName(groupName);
+            Console.ReadLine();
+
             //.WithRegion(location)
             //.Create();
 
